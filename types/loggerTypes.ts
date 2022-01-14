@@ -18,3 +18,9 @@ export interface sendLogsParams {
     logStreamName: string;
     sequenceToken?: string;
 };
+
+export interface awsCred {
+    accessKeyId: string;
+    secretAccessKey: string;
+    region: string;
+}
