@@ -1,0 +1,36 @@
+{
+  "name": "aws-cw-logger",
+  "version": "1.0.0",
+  "description": "Easily send logs from your nodeJs application to AWSCloudWatchLogs stream service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biggaji/aws-cw-logger.git"
+  },
+  "keywords": [
+    "aws-sdk",
+    "aws",
+    "cloudwatch",
+    "cloudwatchlogs",
+    "biggaji",
+    "aws-cw-logger",
+    "js"
+  ],
+  "author": "Tobi Ajibade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biggaji/aws-cw-logger/issues"
+  },
+  "homepage": "https://github.com/biggaji/aws-cw-logger#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1056.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
