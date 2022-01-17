@@ -2,13 +2,13 @@ import { config } from 'dotenv';
 
 config();
 
-import CWLogger from "./logger";
+import CWLogger from "../src/logger";
 
 let logger = new CWLogger(
   {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
-    region: process.env.REGION!,
+    region: process.env.AWS_REGION!,
   },
   {
     logGroupName: "test-sdk",
@@ -17,7 +17,7 @@ let logger = new CWLogger(
 );
 
 let logs = {
-    message: "Hello World from cwLogger",
+    message: "Hello World from Logger",
     timestamp: Date.now(),
   };
 

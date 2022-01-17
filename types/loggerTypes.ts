@@ -7,7 +7,7 @@ export interface getLogNSTParams {
     logGroupName: string;
     limit: number;
     descending: boolean;
-    orderBy: "LogStreamName" | "LastEventTime";
+    orderBy: "LogStreamName";
     logStreamNamePrefix: string;
 };
 

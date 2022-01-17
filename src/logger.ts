@@ -77,7 +77,7 @@ export default class CWLogger {
        });
    };
 
-   async getLogNST(params: getLogNSTParams) {
+   protected async getLogNST(params: getLogNSTParams) {
        return new Promise((resolve, reject) => {
             this.cwl.describeLogStreams(params, (err:any, logStream:any) => {
                 if(err) {
