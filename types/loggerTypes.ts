@@ -5,18 +5,15 @@ export interface logs {
 
 export interface getLogNSTParams {
     logGroupName: string;
-    limit?: number;
-    nextToken?: string;
-    desending?: boolean;
-    orderBy?: string;
-    logStreamNamePrefix?: string;
+    limit: number;
+    descending: boolean;
+    orderBy: "LogStreamName" | "LastEventTime";
+    logStreamNamePrefix: string;
 };
 
-export interface sendLogsParams {
-    logEvents: Array<logs>;
+export interface logsParams {
     logGroupName: string;
     logStreamName: string;
-    sequenceToken?: string;
 };
 
 export interface awsCred {
