@@ -8,7 +8,7 @@ import { logs, getLogNSTParams, logsParams, awsCred } from '../types/loggerTypes
  * @author Tobi Ajibade
  */
 
-export default class CWLogger {
+export class CWLogger {
     protected aws_cred: awsCred;
     protected logParams: logsParams;
     private cwl: any;
