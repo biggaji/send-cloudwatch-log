@@ -2,9 +2,9 @@ import { config } from 'dotenv';
 
 config();
 
-import CWLogger from "../src/logger";
+import { SendCloudWatchLogs } from "../src/logger";
 
-let logger = new CWLogger(
+let logger = new SendCloudWatchLogs(
   {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
@@ -22,10 +22,10 @@ let logs = {
   };
 
 
-logger.sendLogs(logs)
-.then(log => {
-    console.log(`Working`, log);
+logger.sendLog(logs)
+.then(resp => {
+    console.log(`Logs fetched successfully`, resp);
 })
-.catch(e => {
-    console.log(`Working error`, e);
-})
+.catch(err => {
+    console.log(`An error occured`, err);
+});

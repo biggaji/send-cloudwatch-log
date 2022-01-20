@@ -1,4 +1,4 @@
 
-const { CWLogger } = require("./lib/src/logger")
+const { SendCloudWatchLogs } = require("./lib/src/logger")
 
-module.exports = CWLogger;
+module.exports = SendCloudWatchLogs;

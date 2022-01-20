@@ -1,4 +1,4 @@
-export interface logs {
+export interface log {
     message: string;
     timestamp: number;
 };
