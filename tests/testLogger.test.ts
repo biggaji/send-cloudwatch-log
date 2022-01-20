@@ -24,7 +24,7 @@ let logs = {
 
 logger.sendLog(logs)
 .then(resp => {
-    console.log(`Logs fetched successfully`, resp);
+    console.log(`Logs sent successfully`, resp);
 })
 .catch(err => {
     console.log(`An error occured`, err);
