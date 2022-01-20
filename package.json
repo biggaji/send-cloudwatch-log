@@ -1,6 +1,6 @@
 {
   "name": "send-cloudwatch-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily send logs from your nodeJs application to AWSCloudWatchLogs service",
   "main": "index.js",
   "scripts": {
