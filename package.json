@@ -17,6 +17,7 @@
     "cloudwatchlogs",
     "biggaji",
     "aws-cw-logger",
+    "sendCloudWatchLog",
     "js"
   ],
   "author": "Tobi Ajibade <herityjohnny14@gmail.com>",
